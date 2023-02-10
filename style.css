@@ -93,34 +93,45 @@
 }
 @keyframes circle {
   0% {
-    border: thick solid gold;
+    border: 5px solid gold;
+    border-style: dashed ;
     /* border-radius: 50px; */
-    margin-top: 5%;
-    margin-left: 5%;
+    /* margin-top: 5%;
+    margin-left: 5%; */
   }
-  25% {
-    border: thick solid gold;
+  15% {
+    border: 15px solid gold;
+    border: dashed ;
     /* border-radius: 50px; */
-    margin-top: 25%;
-    margin-left: 25%;
+    /* margin-top: 25%;
+    margin-left: 25%; */
+  }
+  30% {
+    border: 30px solid gold;
+    /* border-radius: 50px; */
+    /* margin-top: 50%;
+    margin-left: 50%; */
   }
   50% {
-    border: thick solid gold;
+    border: 50px solid gold;
     /* border-radius: 50px; */
-    margin-top: 50%;
-    margin-left: 50%;
+    /* margin-top: 25%;
+    margin-left: 25%; */
   }
-  75% {
-    border: thick solid gold;
-    /* border-radius: 50px; */
-    margin-top: 25%;
-    margin-left: 25%;
+  70%{
+    border: 30px solid gold;
   }
+  85%{
+    border: 15px solid gold;
+    border-style: dashed;
+  }
+
   100% {
-    border: thick solid gold;
+    border: 5px solid gold;
+    border-style: dashed;
     /* border-radius: 50px; */
-    margin-top: 5%;
-    margin-left: 5%;
+    /* margin-top: 5%;
+    margin-left: 5%; */
   }
 }
 
@@ -181,7 +192,7 @@
 
 
 .mainContainer {
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   justify-content: center;
   border-radius: 50%;
@@ -190,7 +201,7 @@
   margin: auto;
 }
 .link {
-  border: solid black;
+  /* border: solid black; */
   object-position: center;
   cursor: pointer;
   /* background-color: red; */
