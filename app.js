@@ -9,8 +9,13 @@
 //   console.log(animate);
 // }
 
-const rainbow=()=>{
-  let colors = document.querySelector('.icon')
+const rainbowOne=()=>{
+  let colors = document.querySelector('.icon1')
+  colors.classList.toggle('rainbow')
+}
+
+const rainbowTwo=()=>{
+  let colors = document.querySelector('.icon2')
   colors.classList.toggle('rainbow')
 }
 
@@ -25,7 +30,7 @@ const rotateTitleCC=()=>{
 }
 
 const walkRight = () => {
-  let walk = document.querySelector(".mainContainer");
+  let walk = document.querySelector(".link");
   walk.classList.toggle("walkRight");
 };
 
