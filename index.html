@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navBox">
+      <div class="leftBox">
+        <div class="home">
+          <img src="img/home_icon.png" alt="" class="icon1" onmouseover="rainbow()">
+        </div>
+      </div>
+      <div class="centerBox">
+        <h3 class="title" onclick="rotateTitle(); rotateTitleCC();">
+          WALKIN' INC.
+        </h3>
+      </div>
+      <div class="rightBox">
+        <div class="account">
+          <img src="img/account.png" alt="" class="icon2" onmouseover="rainbow()">
+        </div>
+      </div>
+    </div>
+
+    <button class="btnLeft" onclick="walkLeft()">Left</button>
+    <button class="btnRight" onclick="walkRight()">Right</button>
+    <hr />
+
+    <div class="mainContainer">
+      <img src="img/link_idle.png" alt="" class="link" onclick="circle();" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+/* KeyFrames  */
+@keyframes place {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes walkLeft {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -50%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes walkRight {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 50%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes rotateTitle {
+  0% {
+    background-color: white;
+  }
+  25% {
+    transform: rotate(30deg);
+    background-color: red;
+  }
+  50% {
+    transform: rotate(90deg);
+    background-color: blue;
+  }
+  75% {
+    transform: rotate(30deg);
+    background-color: green;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes rotateTitleCC {
+  0% {
+    background-color: white;
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(150deg);
+    background-color: red;
+  }
+  50% {
+    transform: rotate(90deg);
+    background-color: blue;
+  }
+  75% {
+    transform: rotate(150deg);
+    background-color: green;
+  }
+  100% {
+    transform: rotate(180deg);
+    background-color: white;
+  }
+}
+@keyframes circle {
+  0% {
+    border: thick solid gold;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  25% {
+    border: thick solid gold;
+    border-radius: 50px;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+  50% {
+    border: thick solid gold;
+    border-radius: 50px;
+    margin-top: 50%;
+    margin-left: 50%;
+  }
+  75% {
+    border: thick solid gold;
+    border-radius: 50px;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+  100% {
+    border: thick solid gold;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+}
+
+.navBox {
+  border: solid black;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  max-width: 70%;
+  height: 10vh;
+  margin: auto;
+}
+
+.leftBox {
+  /* border: solid red; */
+  width: 33%;
+}
+.home {
+  width: 20%;
+}
+.icon1 {
+  width: 100%;
+  object-position: center;
+}
+.icon1:hower{
+  animation: rainbow .5s;
+  animation-iteration-count: 1;
+}
+.centerBox {
+  /* border: solid green; */
+  width: 33%;
+  text-align: center;
+}
+.title {
+  border: double black;
+  border-radius: 22px;
+  cursor: pointer;
+  animation: place 1s;
+  /* animation: rotateTitle 5s linear;
+  animation-iteration-count: 1; */
+}
+.rightBox {
+  /* border: solid blue; */
+  width: 33%;
+}
+.account {
+  width: 20%;
+  float: right;
+}
+.icon2 {
+  width: 100%;
+  object-position: center;
+}
+.icon2:hower{
+  animation: rainbow .5s;
+  animation-iteration-count: 1;
+}
+
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  margin: auto;
+}
+.link {
+  border: solid black;
+  object-position: center;
+  cursor: pointer;
+  /* background-color: red; */
+}
+.btnLeft,
+.btnRight {
+  width: 50px;
+  height: 50px;
+}
+
+/* Toggles */
+.place {
+  animation: place 1s;
+  animation-iteration-count: 1;
+}
+.rainbow{
+  animation: rainbow 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.rotateTitle {
+  animation: rotateTitle 5s ease-in-out;
+  animation-iteration-count: 1;
+}
+.rotateTitleCC {
+  animation: rotateTitleCC 5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.walkLeft {
+  animation: walkLeft 5s ease-in;
+  animation-iteration-count: 1;
+}
+
+.walkRight {
+  animation: walkRight 5s ease-in;
+  animation-iteration-count: 1;
+}
+
+.circle {
+  animation: circle 5s linear;
+  animation-iteration-count: 1;
+}
